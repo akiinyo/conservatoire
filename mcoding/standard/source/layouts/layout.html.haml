@@ -1,0 +1,16 @@
+!!!
+%html
+  %head
+    %meta(charset='utf-8')
+    %title スタンダードレイアウト
+    = stylesheet_link_tag 'reset', 'style'
+
+  %body
+    %header.header
+
+    .wrapper.clearfix
+      %main.main
+        = yield
+      .sidemenu
+
+    %footer.footer
