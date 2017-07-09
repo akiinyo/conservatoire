@@ -39,6 +39,9 @@ a:link, a:visited, a:hover, a:active
 
 .footer
   width: 100%
+  padding: 20px 0 30px
+  background: #2d3d54 url('../images/bg-footer.gif')
+  color: #fff
 
 .clearfix::after
   content: ''
@@ -355,6 +358,35 @@ a:link, a:visited, a:hover, a:active
 
   .text
     padding-top: 12px
+
+.footer
+  .horizontal-list
+    width: 970px
+    margin: 0 auto
+    text-align: right
+    font-size: 0
+
+    .horizontal-item
+      display: inline-block
+      padding: 0 15px
+      letter-spacing: 1px
+
+      + .horizontal-item
+        border-left: 1px solid #bbb
+
+      a
+        border-bottom: 1px dashed #777
+        font-size: 1.1rem
+        color: #bbb
+        transition: color 0.2s
+
+      a:hover
+        color: #ddd
+
+.copyright
+  margin-top: 30px
+  text-align: center
+  letter-spacing: 1px
 
 .hidden
   display: none
