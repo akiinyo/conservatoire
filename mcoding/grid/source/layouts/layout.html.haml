@@ -5,6 +5,27 @@
     %title グリッドレイアウト
     = stylesheet_link_tag 'reset', 'style'
 
+  %header.header.item
+    %h1
+      %a(href='#')
+        %img(class='logo' src='images/site-logo.png' alt='SAMPLE SITE 2')
+    %nav.nav
+      %ul
+        %li.nav-item
+          %a(href='#') HOME
+        %li.nav-item
+          %a(href='#') ABOUT
+        %li.nav-item
+          %a(href='#') MAIN DISH
+        %li.nav-item
+          %a(href='#') APPETIZER
+        %li.nav-item
+          %a(href='#') BREAK TIME
+        %li.nav-item
+          %a(href='#') COLUMN
+        %li.nav-item
+          %a(href='#') OTHER
+
   %body
     = yield
 
