@@ -24,11 +24,13 @@ a:link, a:visited, a:hover a:active
   border-bottom: 3px solid
   border-radius: 4px
   background-color: #fff
+  overflow: hidden
 
   .image
-    display: block
-    width: 100%
-    height: 109px
+    position: relative
+
+    img
+      width: 100%
 
   .category
     margin: 15px 9px 10px
@@ -61,6 +63,42 @@ a:link, a:visited, a:hover a:active
   > a:hover
     box-shadow: 0 0 6px -1px rgba(0, 0, 0, 0.3)
     opacity: 0.8
+
+  > a .image::before
+    content: ''
+    position: absolute
+    top: 0px
+    right: 0px
+    left: 0px
+    bottom: 0px
+    background: rgba(0, 0, 0, 0.5)
+    opacity: 0
+    transition: opacity 0.3s linear
+
+  > a .image::after
+    content: 'MORE'
+    position: absolute
+    left: 150%
+    top: 50%
+    color: #fff
+    border: 2px solid #fff
+    border-radius: 4px
+    width: 100px
+    margin-left: -50px
+    margin-top: -18px
+    padding: 8px
+    font-weight: bold
+    letter-spacing: 2px
+    text-align: center
+    opacity: 0
+    transition: all 0.3s ease-in-out
+
+  > a:hover .image::before
+    opacity: 1
+
+  > a:hover .image::after
+    opacity: 1
+    left: 50%
 
 .item-m
   width: 364px
