@@ -13,3 +13,50 @@ body
   text-align: center
   font-size: 1.4rem
   font-family: Raleway, 'Hiragino KAku Gothic ProN', Meiryo, sans-serif
+
+.header
+  padding: 170px 30px 80px
+
+  .site-title-sub
+    margin: 0 0 30px
+    letter-spacing: 1px
+    font-size: 2.2rem
+
+  .site-title-sub::before,
+  .site-title-sub::after
+    content: ''
+    display: inline-block
+    width: 140px
+    height: 1px
+    margin: 0 30px
+    background-color: #fff
+    vertical-align: middle
+
+  .site-title
+    margin: 50px 0 40px
+    font-size: 7.6rem
+
+  .site-description
+    margin-bottom: 50px
+    color: #888
+    font-size: 1.6rem
+
+  .buttons
+    .button
+      display: inline-block
+      text-decoration: none
+      padding: 20px
+      margin: 10px
+      width: 200px
+      background-color: #afa58d
+      border-radius: 4px
+      color: #fff
+      font-size: 1.2rem
+      letter-spacing: 1px
+
+    .button:hover
+      opacity: 0.9
+
+    .button-showy
+      @extend .button
+      background-color: #D29E04
