@@ -1,0 +1,14 @@
+!!!
+%html{lang: 'ja'}
+  %head
+    %meta(charset='utf-8')
+    %title シングルページレイアウト
+    %link(href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet")
+    = stylesheet_link_tag 'normalize', 'style'
+
+    %body
+      %header.header
+
+      = yield
+
+      %footer.footer
