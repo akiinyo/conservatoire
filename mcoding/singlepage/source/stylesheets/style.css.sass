@@ -52,7 +52,6 @@ body
       border-radius: 4px
       color: #fff
       font-size: 1.2rem
-      letter-spacing: 1px
 
     .button:hover
       opacity: 0.9
@@ -60,3 +59,32 @@ body
     .button-showy
       @extend .button
       background-color: #D29E04
+
+.heading
+  position: relative
+  display: inline-block
+  padding-bottom: 15px
+  margin: 30px 0 15px
+  letter-spacing: 1px
+  font-size: 4rem
+
+.heading::before,
+.heading::after
+  position: absolute
+  content: ''
+  right: 0
+  left: 0
+  bottom: 0
+  border-bottom: 1px solid #999
+
+.heading::before
+  bottom: 5px
+
+.about
+  padding: 80px 30px
+  background-color: #fff
+  color: #333
+
+  .about-text
+    margin: 30px 0
+    line-height: 2.0
