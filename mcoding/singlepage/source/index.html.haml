@@ -94,3 +94,9 @@
         今後の変更への強さを考慮しています。
 
 %section.contact#contact
+  %h2.heading CONTACT
+  //%form(action='send.php' method='post' class='contact-form')
+  %form.contact-form
+    %input(type='text' name='name' placeholder='NAME')
+    %textarea(name='message' placeholder='MESSAGE')
+    %input(type='submit' value='SEND')
